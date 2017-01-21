@@ -36,7 +36,7 @@ $(PRJ_NAME).elf: $(OBJ)
 -include $(SRCDIR)/*.d
 
 clean:
-	rm -f $(OBJ) $(PRJ_NAME).elf $(PRJ_NAME).hex $(PRJ_NAME).bin
+	rm -f $(OBJ) $(PRJ_NAME).elf $(PRJ_NAME).hex $(PRJ_NAME).bin $(SRCDIR)/*.d
 
 burn:
 	$(PROGRAMMER) $(PGFLAGS)
